@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+    <!-- Patients Column -->
+    <div class="sidebar">
+        <h2>Patients</h2>
+        <div class="sidebar-icons">
+            <img src="{% static 'images/search.png' %}" alt="Search" class="icon">
+        </div>
+        <ul class="patient-list">
+            <li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Emily Williams</span> <br>
+                <span class="patient-info">Female, 18</span>
+
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/ryan.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Ryan Johnson</span> <br>
+                <span class="patient-info">Male, 45</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Brandon Mitchell</span> <br>
+                <span class="patient-info">Male, 36</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Jessica Taylor</span> <br>
+                <span class="patient-info">Female, 28</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Emily Williams</span> <br>
+                <span class="patient-info">Female, 18</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/ryan.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Ryan Johnson</span> <br>
+                <span class="patient-info">Male, 45</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li><li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Emily Williams</span> <br>
+                <span class="patient-info">Female, 18</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/ryan.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Ryan Johnson</span> <br>
+                <span class="patient-info">Male, 45</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li><li>
+                <img src="{%static 'images/emily.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Emily Williams</span> <br>
+                <span class="patient-info">Female, 18</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+            <li>
+                <img src="{%static 'images/ryan.png' %}" alt="Emily" class="patient-photo">
+                <div>
+                <span>Ryan Johnson</span> <br>
+                <span class="patient-info">Male, 45</span>
+                </div>
+                <img src="{% static 'images/more_horiz.png' %}" alt="More Icon" class="more-icon">
+            </li>
+        </ul>
+    </div>
+<div>
+    <!-- Diagnosis History Column -->
+    <div class="diagnosis-history">
+        <h2>Diagnosis History</h2>
+        <div class="blood-pressure-graph">
+            <h3>Blood Pressure</h3>
+            <div class="graph-header">
+                <span>Systolic: <strong>160</strong> (Higher than Average)</span> <br>
+                <span>Diastolic: <strong>78</strong> (Lower than Average)</span>
+            </div>
+            <img src="graph-placeholder.png" alt="Blood Pressure Graph" class="graph-img">
+        </div>
+        <div class="vital-stats">
+            <div class="vital-item1">
+                <img src="{%static 'images/respiratory.svg' %}" alt="thermometer" class="vital-icon">
+                <p>Respiratory Rate<p>
+                <p style="font-size: 24px; font-weight: bold;">20 bpm</p>
+                <p>Normal</p>
+            </div>
+            <div class="vital-item">
+                <img src="{%static 'images/temperature.jpg' %}" alt="thermometer" class="vital-icon">
+                <p>Temperature<p>
+                <p style="font-size: 24px; font-weight: bold;">98.6°F</p>
+                <p>Normal</p>
+            </div>
+            <div class="vital-item">
+                <img src="{%static 'images/heart.svg' %}" alt="thermometer" class="vital-icon">
+                <p>Heart Rate<p>
+                <p style="font-size: 24px; font-weight: bold;">78 bpm</p>
+                <p>Lower than Average</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="diagnosis-history1">
+        <!-- Diagnostic List -->
+        <div class="diagnostic-list">
+            <h3>Diagnostic List</h3>
+            <table class="diagnostic-table">
+                <tr>
+                   
+                    <th>Problem/Diagnosis</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>Hypertension</td>
+                    <td>Chronic high blood pressure</td>
+                    <td>Under Monitoring</td>
+                </tr>
+                <tr>
+                    <td>Hypertension</td>
+                    <td>Chronic high blood pressure</td>
+                    <td>Under Monitoring</td>
+                </tr>
+                <tr>
+                    <td>Hypertension</td>
+                    <td>Chronic high blood pressure</td>
+                    <td>Under Monitoring</td>
+                </tr>
+               
+            </table>
+        </div>
+    </div>
+    </div>
+    
+    
+
+    
+    <!-- Profile Column -->
+     <div>
+    <div class="profile">
+        <div class="profile-item">
+            <img src="{% static 'images/jessica.png' %}" alt="Jessica Taylor" class="profile-image">
+            <h2>Jessica Taylor</h2>
+        </div>
+        <div class="profile-details">
+            <div class="detail-item">
+                <img src="{% static 'images/birthIcon.png' %}" alt="Calendar" class="icon">
+                <div>
+                <span>Date of Birth</span> <br>
+                <span class="bold">August 23, 1996</span></div>
+            </div>
+            <div class="detail-item">
+                <img src="{% static 'images/femaleIcon.png' %}" alt="Gender" class="icon">
+                <div>
+                <span>Gender</span>
+                <span class="bold">Female</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <img src="{% static 'images/phoneIcon.png' %}" alt="Phone" class="icon">
+                <div>
+                <span>Contact Info</span>
+                <span class="bold">(415) 555-1234</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <img src="{% static 'images/phoneIcon.png' %}" alt="Emergency Contact" class="icon">
+                <div>
+                <span>Emergency Contact</span>
+                <span class="bold">(415) 555-5678</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <img src="{% static 'images/insurance.png' %}" alt="Insurance Provider" class="icon">
+                <div>
+                <span>Insurance Provider:</span>
+                <span class="bold">Sunrise Health Assurance</span>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Show All Information</button>
+        </div>
+    </div>
+
+    <div class="lab-results">
+        <div class="lab-results-header">
+            <h2>Lab Results</h2>
+        </div>
+        <ul class="lab-results-list">
+            <li class="lab-item">
+                <div class="lab-details">
+                    <span class="lab-name">Blood Test</span>
+                    <img src="{% static 'images/download.svg' %}" alt="Download Icon" class="download-icon">
+                </div>
+            </li>
+            <li class="lab-item">
+                <div class="lab-details">
+                    <span class="lab-name">CT scans</span>
+                    <img src="{% static 'images/download.svg' %}" alt="Download Icon" class="download-icon">
+                </div>
+            </li>
+            <li class="lab-item">
+                <div class="lab-details">
+                    <span class="lab-name">Radiology Reports</span>
+                    <img src="{% static 'images/download.svg' %}" alt="Download Icon" class="download-icon">
+                </div>
+            </li>
+        </ul>
+    </div>
+        
+    </div>
+    </div>
+</div>
+
+
+{% endblock %}

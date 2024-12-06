@@ -1,0 +1,411 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 1;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-icons .icon {
+    position: absolute;
+    top: 190px;
+    left: 347px;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.patient-list {
+    list-style: none;
+    padding: 0;
+}
+
+.patient-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.patient-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.patient-photo1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.patient-info {
+    font-size: 12px;
+    color: #666;
+}
+.more-icon {
+   
+    cursor: pointer;
+    margin-left: 155px; 
+}
+
+/* Diagnosis History Styling */
+.diagnosis-history {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blood-pressure-graph {
+    margin-bottom: 20px;
+}
+
+.graph-header {
+    margin-bottom: 10px;
+}
+
+.graph-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.vital-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.vital-item {
+    text-align: left;
+    background: #FFE6E9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.vital-item1 {
+    text-align: left;
+    background: #E0F3FA;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.vital-icon {
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    
+}
+
+.diagnosis-history1 {
+    margin-top: 20px; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-template-rows: auto auto; 
+}
+
+.diagnostic-list h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.diagnostic-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.diagnostic-table th, .diagnostic-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.diagnostic-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #555;
+    
+}
+
+
+.diagnostic-table td {
+    color: #666;
+}
+
+.diagnostic-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+
+.profile {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-template-rows: auto auto; 
+}
+
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.profile-details {
+    margin-top: 15px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+    
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bold {
+    font-weight: bold; 
+    margin-left: 5px;
+    display: flex;
+}
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.button-container button {
+    padding: 10px 20px;
+    background: #01F0D0;
+    border: none;
+    border-radius: 41px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.lab-results{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-template-rows: auto auto; 
+}
+.lab-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.lab-name {
+    font-size: 14px;
+    color: #555;
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.lab-results-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    
+}
+.lab-item{
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .diagnosis-history, .profile {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vital-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Navbar Container */
+.navbar-container {
+    margin: 20px auto;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    max-width: 1700px;
+    overflow: hidden;
+    margin: 20px;
+    
+    align-items: center;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d0e0e;
+}
+
+.logo-img {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icons and text */
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgba(45, 156, 219, 0.1);
+    color:#31d0d5;
+}
+
+.menu a.active {
+    background-color: #31d0d5;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+
+}
+
+/* Profile Menu Styling */
+.profile-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .navbar-container {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .profile-menu {
+        margin-top: 20px;
+        align-self: flex-end;
+    }
+}

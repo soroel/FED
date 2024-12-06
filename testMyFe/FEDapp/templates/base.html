@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Care Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar-container"> <!-- Container for rounded corners -->
+            <nav>
+                <!-- Logo Section -->
+                <div class="logo-img">
+                    <img src="{% static 'images/TestLogo.svg' %}" alt="Tech.Care Logo">
+                </div>
+                
+                <!-- Menu Section -->
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/home.png' %}" alt="Overview Icon" class="menu-icon"> Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <img src="{% static 'images/patients.svg' %}" alt="Patients Icon" class="menu-icon"> Patients
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/schedule.png' %}" alt="Schedule Icon" class="menu-icon"> Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/messages.svg' %}" alt="Message Icon" class="menu-icon"> Message
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/transaction.png' %}" alt="Transactions Icon" class="menu-icon"> Transactions
+                        </a>
+                    </li>
+
+                    
+                </ul>
+                
+                <!-- Profile Section -->
+                <div class="profile-menu">
+                    <img src="{% static 'images/profile1.png' %}" alt="Doctor Profile" class="profile-photo">
+                    <span class="profile-name">Dr. Jose Simmons</span>
+                    <img src="{% static 'images/settings.svg' %}" alt="Settings Icon" class="icon">
+                    <img src="{% static 'images/more.svg' %}" alt="More Icon" class="icon">
+                </div>
+            </nav>
+        </div> <!-- End of navbar container -->
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
